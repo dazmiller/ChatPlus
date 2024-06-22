@@ -1,3 +1,6 @@
+
+![](https://holocron.so/uploads/6d60dd4b-chatplus-banner.png)
+
 # ChatPlus a Great PWA for Chatting 💬✨🤩
 
 ChatPlus is a progressive web app developped with React, NodeJS, Firebase and other services
