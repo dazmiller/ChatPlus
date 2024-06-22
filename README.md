@@ -32,7 +32,7 @@ After using the app, you can delete your account if you want by clicking on the 
 
 If you're intrested in working with me, I would be glad to do that you can contact me here :
 
-- UpWork: <https://www.upwork.com/freelancers/\~01e15a92091f0f0bc7?mp_source=share>
+- UpWork: <https://www.upwork.com/freelancers/~01e15a92091f0f0bc7?mp_source=share>
 - Email: [bounekeur@gmail.com](bounekeur@gmail.com)
 - WhatsApp & Telegram: +90 534 414 48 71
 - ChatPlus: search for my name "Alaa Eddine Boubekeur" in the app and chat with me 😉😉
