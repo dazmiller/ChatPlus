@@ -128,7 +128,7 @@ Take a look at them to get a good understanding of the app.
 - Messaging users in real time.
 - You can text messages.
 - You can send Images.
-- You can drag and drop
+- You can drag and drop any image to your chat and send it, you can drag pictures from the web, or from your device
 - You can send an audio message.
 - You click on an image sent in a chat and it will smoothly animate to the center so you can see it.
 - You can see if the user is typing or recording.
