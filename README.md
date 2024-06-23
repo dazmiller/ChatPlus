@@ -1,6 +1,6 @@
 ![](https://raw.githubusercontent.com/aladinyo/ChatPlus/main/UI%20%26%20UX/ChatPlus_Banner.png)
 
-# ChatPlus a Great PWA for Chatting 💬✨🤩
+## ChatPlus a Great PWA for Chatting 💬✨🤩
 
 ChatPlus is a progressive web app developped with React, NodeJS, Firebase and other services.
 
