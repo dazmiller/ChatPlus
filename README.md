@@ -109,7 +109,7 @@ node index
 node callServer
 ```
 
-For the frontend you can setup firebase hosting, make sure that the deploy folder is "public" and rewrite all URLs to "index.html", and don't overwrite "index.html" , and every time you deploy a new version of your frontend, increment the version field on the version document of the version collection that you created, you can do that either manually or by calling "updateAppVersion" function on your Test class on your backend folder.
+For the frontend you can setup firebase hosting, make sure that the deploy folder is "public" and rewrite all URLs to "index.html", and don't overwrite "index.html" , and every time you deploy a new version of your frontend, increment the version field on the version document of the version collection that you created, you can do that either manually or by calling "updateAppVersion" function on your Test class on your backend folder, and keep the same configuration that I put on firebase.json
 
 ## Have Fun Now 🚀💥🎉🤩
 
