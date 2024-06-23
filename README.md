@@ -22,6 +22,8 @@ Share it with your friends and have fun chatting with them🎈🎉😍
 
 After using the app, you can delete your account if you want by clicking on the delete button at the top of the home page, though it would be sad seeing you leaving !!!!.
 
+**Note:** The web app is very safe, and you can safely access it from the live link, and your data is encrypted by firebase and security rules are set, people won't be able to see your messages or calls with other users, people can only see your name and photo.
+
 ## Clean Simple UI & UX
 
 ![](https://holocron.so/uploads/64357369-chatplus-mobile.png)
