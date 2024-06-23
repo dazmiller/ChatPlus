@@ -1,4 +1,4 @@
-![](https://holocron.so/uploads/6d60dd4b-chatplus-banner.png)
+![](https://raw.githubusercontent.com/aladinyo/ChatPlus/main/UI%20%26%20UX/ChatPlus_Banner.png)
 
 # ChatPlus a Great PWA for Chatting 💬✨🤩
 
