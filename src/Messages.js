@@ -1,4 +1,4 @@
-import { useMemo, memo, /*useRef, useLayoutEffect*/ } from 'react';
+import { useMemo, memo, useEffect, /*useRef, useLayoutEffect*/ } from 'react';
 import { useStateValue } from './StateProvider';
 import { Link } from 'react-router-dom/cjs/react-router-dom.js';
 import { useRouteMatch } from 'react-router-dom';
@@ -37,6 +37,10 @@ function Messages({ messages, clientWidth, page, seen, lastMessageRef, state, cl
             });
         }
     }, [messages]);*/
+
+    useEffect(() => {
+        console.info(collapse)
+    }, [collapse])
 
     return (
         <>
@@ -101,17 +105,17 @@ function Messages({ messages, clientWidth, page, seen, lastMessageRef, state, cl
                                         <ErrorIcon />
                                         <h3>Error Uploading Image</h3>
                                     </div>
-                                : message.imageUrl === "uploading" ?
-                                    <div className="image__container--loader">
-                                        <CircularProgress size={page.width <= 760 ? 40 : 80} />
-                                    </div>
-                                :
-                                    <Link to={{
-                                        pathname: match.url + "/image",
-                                        state: state,
-                                    }}>
-                                        <img onClick={(e) => clickImagePreview(e, message.imageUrl, message.ratio)} src={message.imageUrl} alt="" />
-                                    </Link>
+                                    : message.imageUrl === "uploading" ?
+                                        <div className="image__container--loader">
+                                            <CircularProgress size={page.width <= 760 ? 40 : 80} />
+                                        </div>
+                                        :
+                                        <Link to={{
+                                            pathname: match.url + "/image",
+                                            state: state,
+                                        }}>
+                                            <img onClick={(e) => clickImagePreview(e, message.imageUrl, message.ratio)} src={message.imageUrl} alt="" />
+                                        </Link>
                                 }
                             </div>}
                             {message.audioName ?
@@ -123,17 +127,21 @@ function Messages({ messages, clientWidth, page, seen, lastMessageRef, state, cl
                             {message.audioName ?
                                 <>
                                     <p className="chat__transcript" data-id={message.id} style={{
-                                        fontWeight: message.transcript === "$state=loading" || message.transcript === "" ? "bold" : "normal",
-                                        color: message.transcript === "$state=loading" || message.transcript === "" ? message.uid === user.uid ? "white" : "#53ccfc" : message.uid === user.uid ? "white" : "black"
+                                        fontWeight: "normal",
+                                        color: message.uid === user.uid ? "white" : "black"
                                     }}>
                                         {message.audioUrl === "error" ? "Error uploading audio" : message.transcript === "$state=loading" ? "transcripting audio..." : message.transcript ? message.transcript : "No Transcript"}
                                     </p>
-                                    {message.transcript !== "$state=loading" && message.transcript !== "" && collapse[message.id] && <p style={{
+                                    <p style={{
                                         color: message.uid === user.uid ? "#8edfff" : "#53ccfc",
                                         fontWeight: "bold"
-                                    }} onClick={collapseTranscript} className="transcript__collapse">Show Transcript</p>}
+                                    }} onClick={message.transcript !== "$state=loading" && message.transcript !== "" && collapse[message.id] ? collapseTranscript : null}
+                                    className="transcript__collapse">
+                                        {message.transcript === "$state=loading" ? "Converting Speech" : message.transcript !== "" 
+                                        && collapse[message.id] ? "Show Transcript" : message.transcript !== "" && !collapse[message.id] ? "Transcripted" : "Speech not Recognized"}
+                                    </p>
                                 </>
-                            : null}
+                                : null}
                         </div>
                     </>
                 )
