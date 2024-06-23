@@ -62,13 +62,13 @@ after you set up your cloud services, you will be able to access their service a
 
 Install all your JS dependencies by running the following command on the root folder and on "/backend" folder, your folder contains your frontend React app, and your backend contains your server side services that interact with your cloud services:
 
-```shell
+```posh
 npm install
 ```
 
 After you installed all your dependencies for the frontend and backend, navigate to "/backend" folder and run this command to run your server worker:
 
-```shell
+```posh
 node index
 ```
 
@@ -76,7 +76,7 @@ This worker contains all your server side services that interact between your ap
 
 After that run this command to run you app's web call server
 
-```shell
+```posh
 node callServer
 ```
 
@@ -86,13 +86,13 @@ After setting up your backend, go to your firebase console, navigate to your fir
 
 After that run your frontend code locally for testing and developping by calling this command
 
-```shell
+```posh
 npm run start
 ```
 
 After you finished development, build your frontend for production by calling
 
-```shell
+```posh
 npm run build
 ```
 
@@ -104,7 +104,7 @@ In order to make your app available on the internet, you have to deploy the back
 
 For the backend you can use any service you want like Heroku or Railway, just make sure that you're running two servers with the commands I provided for you, one runs the worker service and the other runs the call web service, your call web service is gonna be accessed by an endpoint URL which will be provided by your server hosting service so update your callAPI variable on "src/configKeys.js" accordingly
 
-```shell
+```posh
 node index
 node callServer
 ```
