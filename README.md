@@ -43,7 +43,7 @@ If you're intrested in working with me, I would be glad to do that you can conta
 
 Clone the code into a folder on your machine then set up the following cloud services:
 
-- Firebase: go to firebase and create a new project and enable Firestore, Database, Authentication (don't forget to allow google authentication), Messaging and enable hosting, visit [Firebase Documentation (google.com)](https://firebase.google.com/docs) for detailed informations
+- Firebase: go to firebase and create a new project and enable Firestore, Database, Messaging, Storage, Authentication (don't forget to allow google authentication) and enable hosting, visit [Firebase Documentation (google.com)](https://firebase.google.com/docs) for detailed informations
 - Algolia: go to algolia website and set up a new project and create an app, and create an index, check out [Algolia Documentation](https://www.algolia.com/doc/) for detailed informations
 - Google Cloud Speech to Text: after you have created your firebase app, you will find it in your google cloud platform, go to your console and add speech to text functionality, check out [Speech-to-Text AI: speech recognition and transcription | Google Cloud](https://cloud.google.com/speech-to-text?hl=en) for detailed informations
 - Daily WebRTC: set up a daily api account for call services and create an app, visit [Daily | API documentation](https://docs.daily.co/) for more information
